@@ -10,8 +10,11 @@ public class OptionMenu {
 
 		while (true) {
 
-			System.out.println("\nWhat would u like to do with contacts? \n" + "1. ADD     \n" + "2. DISPLAY \n"
-					+ "0. EXIT    \n");
+			System.out.println("\nWhat would u like to do with contacts? \n" + 
+			        "1. ADD     \n" + 
+					"2. DISPLAY \n" +
+			        "3. EDIT    \n" +
+					"0. EXIT    \n");
 			int choice = scanner.nextInt();
 
 			switch (choice) {
@@ -21,6 +24,10 @@ public class OptionMenu {
 
 			case 2:
 				addOrRemove.displayPerson();
+				break;
+				
+			case 3:
+				addOrRemove.editPerson();
 				break;
 
 			default:
