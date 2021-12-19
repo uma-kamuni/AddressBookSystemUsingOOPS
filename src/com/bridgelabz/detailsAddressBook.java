@@ -15,6 +15,13 @@ public class detailsAddressBook {
 //  }
 
 	private String firstName;
+	@Override
+	public String toString() {
+		return "detailsAddressBook [firstName=" + firstName + ", lastName=" + lastName + ", address=" + address
+				+ ", city=" + city + ", state=" + state + ", phoneNumber=" + phoneNumber + ", zip=" + zip
+				+ ", emailAddress=" + emailAddress + "]";
+	}
+
 	private String lastName;
 	private String address;
 	private String city;
